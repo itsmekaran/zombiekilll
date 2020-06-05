@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="20" tilewidth="32" tileheight="32" nextobjectid="14">
+ <tileset firstgid="1" name="foreground" tilewidth="32" tileheight="32" tilecount="696" columns="29">
+  <image source="../game/tilesets/ground.png" trans="00aaff" width="954" height="780"/>
+ </tileset>
+ <tileset firstgid="697" name="bg" tilewidth="32" tileheight="32" tilecount="390" columns="26">
+  <image source="../game/tilesets/graveyard.jpg" trans="00aaff" width="852" height="480"/>
+ </tileset>
+ <tileset firstgid="1087" name="signs" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="../game/tilesets/signs.png" trans="00aaff" width="512" height="512"/>
+ </tileset>
+ <layer name="background" width="50" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztzqENADAIADBC9r/jP07higVERX07IxoAADit3v4B+GsAXc5ytQ==
+  </data>
+ </layer>
+ <layer name="foreground" width="50" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt1EtOAlEQheFmEeC4AbfRIMvg5WMTyjvsgbcOwB2ogDAAXYJj1CU4Vhj5D24lzU3PaNIJqZN8yc1JKqlOJe04Go1Go9FoNKeVdtQLaA7ORyzqDcLJz4l8R5jJo4AiSijjElcYY2I8IokUXPN2fV0a50foZJdr3GCNN7xb/S3uUEEVNdTRwMrMyWwGWXjm7fm6C+SO0MkuTbTwiS98W30HXfTQxwBDjLCx5uRmcr+gO4bdyS73eMAftthZ/ROe8YIpZpjjFb/WnNxM7hd0x7A72WWBJeL8GxI4i+33/2DqWNQ=
+  </data>
+ </layer>
+ <objectgroup name="triggers" visible="0">
+  <object id="1" name="player" x="96" y="384" width="32" height="32">
+   <properties>
+    <property name="player" value="yes"/>
+   </properties>
+  </object>
+  <object id="2" name="platform" x="0" y="0" width="32" height="512">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="3" name="platform" x="-64" y="512" width="1664" height="160">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="9" name="platform" x="1568" y="-2" width="34" height="512">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="10" name="gun" x="256" y="416" width="32" height="32">
+   <properties>
+    <property name="guns" value="yes"/>
+   </properties>
+  </object>
+  <object id="11" name="repeat" x="0" y="480" width="32" height="32">
+   <properties>
+    <property name="repeat" value="yes"/>
+   </properties>
+  </object>
+  <object id="12" name="repeat" x="1568" y="480" width="32" height="32">
+   <properties>
+    <property name="repeat" value="yes"/>
+   </properties>
+  </object>
+  <object id="13" name="boss" x="1472" y="369" width="32" height="32">
+   <properties>
+    <property name="boss" value="boss"/>
+    <property name="can_shoot" value="true"/>
+    <property name="damage" value="20"/>
+    <property name="power" value="250"/>
+    <property name="range" value="0 1568"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

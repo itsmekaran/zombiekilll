@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="200" height="20" tilewidth="32" tileheight="32" nextobjectid="53">
+ <tileset firstgid="1" name="background" tilewidth="32" tileheight="32" tilecount="289" columns="17">
+  <image source="../game/tilesets/night.png" trans="00aaff" width="544" height="544"/>
+ </tileset>
+ <tileset firstgid="290" name="foreground" tilewidth="32" tileheight="32" tilecount="300" columns="20">
+  <image source="../game/tilesets/Xploration_Rocky_Tileset.png" trans="00aaff" width="640" height="480"/>
+ </tileset>
+ <tileset firstgid="590" name="signs" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="../game/tilesets/signs.png" trans="00aaff" width="512" height="512"/>
+ </tileset>
+ <layer name="background" width="200" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt2NWOFEEUgOHeK3Swd0GeAH0A9AFwlxvcL3G5xCVZILgkSHBJkCwOyQLB9YLgsPydTIemKDnV07tL4CT7JTtdPdXd59Spqp76JEl2YCd24X0LW4KlWIblWIGVWIXVWIO1ju/2Q38MaOF7HotxGI8JmIhJmIwpmIppBfsegqEYVuNz2vpprnN8QvfenLFMvcW7iONm+1Ecw3GcQHf0QE/0EvaVqU/steaL0TqsxwZsxCZsxhZsxTZsL5g76bhynec6PguzMQdzMQ/zsQALsQiLC15zFEZjjPA5Y/oxz7WdY5Kc4xPKURmx9I3vpI6/uj/bXcfN9sv8ewVXcQ290Qd9q/E0+/LVillrkhjtxh7sxT7sxwEcxCEcxhHHOAjlTjr3uc5zHQ+teZK6dPU9HTMwU/icMf2Y59rOMUnO8dVqKEdpLCtVZizTY779g082Zruim6UOzOPmuM7aG/n/AR7iEQZiEAZX42n25as7s9YkMTqJUziNMziLcziPC7iIS45xEMqded2YudZ3PLTmSeoyZl72PWdMP7WsBUVr3nbv+b7SWGb1kcWyksj2Dz6uunDN76H1JDMcIzCyGk/pdVONye+1JslvA67jBm7iFm7jDu7iHu4XzK153Zi51nc8tOZJ7jVmXg6NV9/4k14zNP7LrPmsr4qFa/9QJEY2rjrwjetahd5PfLF/jCd4imd4jhd4iVd4jTe53Iby6GuvdS+dCa15te5JJO2+8VrknTr0HWnNS9aZrC9bfbj2D2WN1VrrQPq+n/8cWpvysc/PDWnbB3zEJ3zGF3zFN3zHDzRF5NHXHjtnu3LdkMjWvDLGpavdN16LzAOh70hjJ/0tIeurzFi2BOn7fv5zqCazuSGNfX5uSNva8L22aIf26ICOqKATOqNLru9QHmPGhm3854+5cu1b82J/iy36PL7xWmTvVut+T/I8tniasawk9v1Da9dFRvq+H7NO2dbRIiR5jMmzLV/5Y/lc58e9b82L3duU+Tx/g9jfEkL7hzTvTRHXV7UrUpu+d0pfPatf8rUTE8d0/6CxLUdZa1VZ650qL0+tfc//i9hYa/6UUkoppZRSSimllFJKKaXUv+InZW8gjg==
+  </data>
+ </layer>
+ <layer name="foreground" width="200" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztl0tywkAMRMfeZJfcIj/y/54ml8p5siLhChBuE3nhihFqaWTjDdWvqgt7GIuxaY3kUgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEJIlvO2lAvRZTv9+yvRtWjR4vGbGeOctPOI7PPB51LFsinlW/QjWjW75/2xnpONswLSfMnYWfuv04GsseE4+m6unDsGHRNRHRjLWjy5Ef2Kts3ueX+s51hE+bE1pOnyQ3ve8j86R9dEeeVd482bKr0mpGiutfYafR5ZjszBsrHleR3F0ddYsfocQ/Ujqg3Iw8gXaF7kxYx/M/4e42UvBooV5VGnTD9sjdeOLVQeej33rehOdC96ED2KnkTPohfRq+hN9N7u+2cO1o2tYb0Ykx8olleHhvWjxm+oLmTna39pL3XUrqe2hmXv0fP8mHV0n2gvHEr7Au2n0R7reaWmx9fHyIeHRvsXvSt47w39PUeK+jSdH5mepDYvIt96+eONZepItreyamjtM/DWYO1faJ9E+eIJ/ddeT496fH2M+vxDo3+zRijOlGfWofuryC+WNLXxsl7LriHqh6wY0e9n7tO6/g+Qffna
+  </data>
+ </layer>
+ <objectgroup name="triggers" visible="0">
+  <object id="1" name="platform" x="0" y="64" width="11" height="480">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="4" name="platform" x="0" y="544" width="864" height="96">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="5" name="player" x="64" y="416" width="32" height="32">
+   <properties>
+    <property name="player" value="yes"/>
+   </properties>
+  </object>
+  <object id="7" name="repeat" x="192" y="512" width="32" height="32">
+   <properties>
+    <property name="repeat" value="yes"/>
+   </properties>
+  </object>
+  <object id="9" name="repeat" x="864" y="512" width="32" height="32">
+   <properties>
+    <property name="repeat" value="yes"/>
+   </properties>
+  </object>
+  <object id="10" name="zombie" x="640" y="448" width="32" height="32">
+   <properties>
+    <property name="can_shoot" value="false"/>
+    <property name="damage" value="0.5"/>
+    <property name="power" value="2"/>
+    <property name="range" value="192 864"/>
+    <property name="zombie" value="simple"/>
+   </properties>
+  </object>
+  <object id="11" name="zombie" x="768" y="448" width="32" height="32">
+   <properties>
+    <property name="can_shoot" value="true"/>
+    <property name="damage" value="10"/>
+    <property name="power" value="2"/>
+    <property name="range" value="192 864"/>
+    <property name="zombie" value="shoot"/>
+   </properties>
+  </object>
+  <object id="12" name="gun" x="288" y="416" width="32" height="32">
+   <properties>
+    <property name="guns" value="yes"/>
+   </properties>
+  </object>
+  <object id="13" name="spike" x="864" y="576" width="96" height="32">
+   <properties>
+    <property name="damage" value="10"/>
+    <property name="spike" value="lava"/>
+    <property name="width" value="96"/>
+   </properties>
+  </object>
+  <object id="14" name="platform" x="864" y="608" width="96" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="15" name="repeat" x="928" y="512" width="32" height="32">
+   <properties>
+    <property name="repeat" value="yes"/>
+   </properties>
+  </object>
+  <object id="16" name="repeat" x="1536" y="512" width="32" height="32">
+   <properties>
+    <property name="repeat" value="yes"/>
+   </properties>
+  </object>
+  <object id="17" name="zombie" x="1440" y="492" width="32" height="32">
+   <properties>
+    <property name="can_shoot" value="false"/>
+    <property name="damage" value="1.5"/>
+    <property name="power" value="2"/>
+    <property name="range" value="928 1536"/>
+    <property name="zombie" value="wolf"/>
+   </properties>
+  </object>
+  <object id="18" name="zombie" x="1280" y="480" width="32" height="32">
+   <properties>
+    <property name="can_shoot" value="false"/>
+    <property name="damage" value="0.5"/>
+    <property name="power" value="2"/>
+    <property name="range" value="928 1536"/>
+    <property name="zombie" value="ghost"/>
+   </properties>
+  </object>
+  <object id="19" name="platform" x="960" y="544" width="576" height="96">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="20" name="platform" x="1632" y="480" width="96" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="21" name="platform" x="1824" y="416" width="96" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="22" name="platform" x="2080" y="416" width="96" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="23" name="repeat" x="1984" y="384" width="32" height="32">
+   <properties>
+    <property name="repeat" value="yes"/>
+   </properties>
+  </object>
+  <object id="24" name="repeat" x="2304" y="384" width="32" height="32">
+   <properties>
+    <property name="repeat" value="yes"/>
+   </properties>
+  </object>
+  <object id="25" name="zombie" x="2176" y="352" width="32" height="32">
+   <properties>
+    <property name="can_shoot" value="false"/>
+    <property name="damage" value="0.5"/>
+    <property name="power" value="2"/>
+    <property name="range" value="1984 2304"/>
+    <property name="zombie" value="ghost"/>
+   </properties>
+  </object>
+  <object id="26" name="spike" x="1536" y="576" width="800" height="32">
+   <properties>
+    <property name="damage" value="10"/>
+    <property name="spike" value="lava"/>
+    <property name="width" value="800"/>
+   </properties>
+  </object>
+  <object id="27" name="platform" x="1536" y="608" width="800" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="28" name="platform" x="2336" y="416" width="416" height="224">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="29" name="repeat" x="2752" y="384" width="32" height="32">
+   <properties>
+    <property name="repeat" value="yes"/>
+   </properties>
+  </object>
+  <object id="30" name="zombie" x="2688" y="288" width="32" height="32">
+   <properties>
+    <property name="can_shoot" value="false"/>
+    <property name="damage" value="1.5"/>
+    <property name="power" value="3"/>
+    <property name="range" value="2304 2752"/>
+    <property name="zombie" value="eagle"/>
+   </properties>
+  </object>
+  <object id="31" name="life" x="2368" y="320" width="32" height="32">
+   <properties>
+    <property name="life" value="yes"/>
+    <property name="val" value="100"/>
+   </properties>
+  </object>
+  <object id="32" name="platform" x="2912" y="416" width="416" height="224">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="33" name="spike" x="2752" y="544" width="160" height="32">
+   <properties>
+    <property name="damage" value="10"/>
+    <property name="spike" value="lava"/>
+    <property name="width" value="160"/>
+   </properties>
+  </object>
+  <object id="34" name="platform" x="2752" y="576" width="160" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="35" name="repeat" x="2880" y="384" width="32" height="32">
+   <properties>
+    <property name="repeat" value="yes"/>
+   </properties>
+  </object>
+  <object id="36" name="repeat" x="3328" y="384" width="32" height="32">
+   <properties>
+    <property name="repeat" value="yes"/>
+   </properties>
+  </object>
+  <object id="37" name="zombie" x="3264" y="288" width="32" height="32">
+   <properties>
+    <property name="can_shoot" value="false"/>
+    <property name="damage" value="1.5"/>
+    <property name="power" value="4"/>
+    <property name="range" value="2880 3328"/>
+    <property name="zombie" value="dragon"/>
+   </properties>
+  </object>
+  <object id="38" name="platform" x="3456" y="416" width="704" height="256">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="39" name="platform" x="4160" y="448" width="2240" height="224">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="40" name="platform" x="6368" y="64" width="32" height="384">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="41" name="platform" x="6368" y="64" width="32" height="384">
+   <properties>
+    <property name="blockers" value="end"/>
+   </properties>
+  </object>
+  <object id="42" name="repeat" x="3424" y="384" width="32" height="32">
+   <properties>
+    <property name="repeat" value="yes"/>
+   </properties>
+  </object>
+  <object id="43" name="repeat" x="4160" y="384" width="32" height="32">
+   <properties>
+    <property name="repeat" value="yes"/>
+   </properties>
+  </object>
+  <object id="44" name="repeat" x="6368" y="416" width="32" height="32">
+   <properties>
+    <property name="repeat" value="yes"/>
+   </properties>
+  </object>
+  <object id="45" name="zombie" x="6272" y="320" width="32" height="32">
+   <properties>
+    <property name="can_shoot" value="false"/>
+    <property name="damage" value="1.5"/>
+    <property name="power" value="4"/>
+    <property name="range" value="4160 6368"/>
+    <property name="zombie" value="dragon"/>
+   </properties>
+  </object>
+  <object id="46" name="zombie" x="5856" y="320" width="32" height="32">
+   <properties>
+    <property name="can_shoot" value="false"/>
+    <property name="damage" value="1.5"/>
+    <property name="power" value="3"/>
+    <property name="range" value="4160 6368"/>
+    <property name="zombie" value="eagle"/>
+   </properties>
+  </object>
+  <object id="47" name="zombie" x="4672" y="320" width="32" height="32">
+   <properties>
+    <property name="can_shoot" value="false"/>
+    <property name="damage" value="1.5"/>
+    <property name="power" value="4"/>
+    <property name="range" value="4160 6368"/>
+    <property name="zombie" value="dragon"/>
+   </properties>
+  </object>
+  <object id="48" name="zombie" x="5376" y="384" width="32" height="32">
+   <properties>
+    <property name="can_shoot" value="false"/>
+    <property name="damage" value="0.5"/>
+    <property name="power" value="2"/>
+    <property name="range" value="4160 6368"/>
+    <property name="zombie" value="ghost"/>
+   </properties>
+  </object>
+  <object id="49" name="zombie" x="4032" y="352" width="32" height="32">
+   <properties>
+    <property name="can_shoot" value="false"/>
+    <property name="damage" value="0.5"/>
+    <property name="power" value="2"/>
+    <property name="range" value="3424 4160"/>
+    <property name="zombie" value="skeleton"/>
+   </properties>
+  </object>
+  <object id="50" name="zombie" x="3712" y="320" width="32" height="32">
+   <properties>
+    <property name="can_shoot" value="true"/>
+    <property name="damage" value="10"/>
+    <property name="power" value="2"/>
+    <property name="range" value="3424 4160"/>
+    <property name="zombie" value="shoot"/>
+   </properties>
+  </object>
+  <object id="51" name="spike" x="3328" y="544" width="128" height="32">
+   <properties>
+    <property name="damage" value="10"/>
+    <property name="spike" value="lava"/>
+    <property name="width" value="128"/>
+   </properties>
+  </object>
+  <object id="52" name="platform" x="3328" y="576" width="128" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

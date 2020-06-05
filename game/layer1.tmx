@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="20" tilewidth="32" tileheight="32" nextobjectid="91">
+ <tileset firstgid="1" name="back" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="bg1.png" trans="00aaff" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="257" name="gun" tilewidth="32" tileheight="32" tilecount="120" columns="15">
+  <image source="gun.gif" trans="00aaff" width="480" height="256"/>
+ </tileset>
+ <tileset firstgid="377" name="foreground" tilewidth="32" tileheight="32" tilecount="756" columns="28">
+  <image source="tileset10.png" trans="00aaff" width="900" height="888"/>
+  <tile id="0">
+   <objectgroup draworder="index">
+    <object id="1" name="enemyt" x="2" y="3">
+     <properties>
+      <property name="blockers" value="t"/>
+     </properties>
+     <polygon points="0,0 -2,89 45,-60"/>
+    </object>
+    <object id="3" x="32" y="-64" height="64"/>
+    <object id="6" x="0" y="-64" width="32" height="64"/>
+    <object id="7" x="32" y="-32"/>
+   </objectgroup>
+  </tile>
+  <tile id="30">
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="0" width="32" height="32"/>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <tileset firstgid="1133" name="signs" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="signs.png" trans="00aaff" width="512" height="512"/>
+ </tileset>
+ <layer name="background" width="100" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt0csNgDAMRMHQQmrg03+HuAQkiLRGc5j783qOMSbw2l6OcpYroKdra3JbisSNVjcl3vxXX2zd7V/deu2yti/9bgB62gIaAAAAeOYGb9eQOA==
+  </data>
+ </layer>
+ <layer name="foreground" width="100" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztl1tKw0AUhifT7sAFKGhRV6GiL152oNI3dQde2oJVvKzAC7SKlw2IClYXoYLVRfhi9cHLk/8wI4zHSdIMsUlgPvhgTnom7eRvpg1jDofD4XA4HA6HIwv0c8YG4CBP+pM4BKPIYSzDWZTzSX+C/6PmMVaHB3CcmzVxi/4HZRM+wieliQkunYRTPucM6tnAeTfhFtz2eY8s4bdH/Vzza4s8XpQt+ArflCbmuHQeLvicM6jnCOc9hifwFJ7FdI/kE8hWZEH3qFrA9W8nj07Ty6V9sMDjy6MrgTxEFkWf+8L2/ug0Q1w6DEdizCMJipb3RZrymObSGTib8TxK2jWNmkVa8qD71Qq+VyVYhhW4CqtwDa6rmh7TMfVXQ+YIaL9tXVEWyLraGacBul/tYC27cA/ue7//Jx6qmh7TMfXXQ+YIaL9tra8l6jgN0P2qJ8fYOdZ1AS/hFWx48nfwRtX0mI6pvxEyR0D7bWt9LVHHaUDsm4twCS6rPMR/7jt47/19DjI9G+mY+pshcwS037bW1xJ1nAbob5rI4xnr6s7JMX0OMj0b6Zj6WyFzBLTftn7HGj7gJ/ziwTV9LQ3QPL4B0+TxRQ==
+  </data>
+ </layer>
+ <objectgroup name="triggers" visible="0">
+  <object id="1" name="platform" x="0" y="480" width="416" height="160">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="3" name="platform" x="512" y="480" width="320" height="160">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="4" name="platform" x="0" y="64" width="32" height="416">
+   <properties>
+    <property name="blockers" value="trlb"/>
+   </properties>
+  </object>
+  <object id="5" name="player" x="128" y="320" width="32" height="32">
+   <properties>
+    <property name="player" value="yes"/>
+   </properties>
+  </object>
+  <object id="11" name="gun" x="544" y="384" width="32" height="32">
+   <properties>
+    <property name="guns" value="yes"/>
+   </properties>
+  </object>
+  <object id="12" name="repeat" x="928" y="448" width="32" height="32">
+   <properties>
+    <property name="repeat" value="yes"/>
+   </properties>
+  </object>
+  <object id="14" name="repeat" x="1600" y="448" width="32" height="32">
+   <properties>
+    <property name="repeat" value="yes"/>
+   </properties>
+  </object>
+  <object id="15" name="zombie" x="1280" y="384" width="32" height="32">
+   <properties>
+    <property name="can_shoot" value="true"/>
+    <property name="damage" value="10"/>
+    <property name="power" value="2"/>
+    <property name="range" value="928 1600"/>
+    <property name="zombie" value="shoot"/>
+   </properties>
+  </object>
+  <object id="18" name="platform" x="960" y="483" width="1056" height="194">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="19" name="repeat" x="608" y="448" width="32" height="32">
+   <properties>
+    <property name="repeat" value="yes"/>
+   </properties>
+  </object>
+  <object id="20" name="repeat" x="832" y="448" width="32" height="32">
+   <properties>
+    <property name="repeat" value="yes"/>
+   </properties>
+  </object>
+  <object id="23" name="zombie" x="768" y="384" width="32" height="32">
+   <properties>
+    <property name="can_shoot" value="false"/>
+    <property name="damage" value="1"/>
+    <property name="power" value="3"/>
+    <property name="range" value="608 832"/>
+    <property name="zombie" value="simple"/>
+   </properties>
+  </object>
+  <object id="26" name="spike" x="416" y="544" width="96" height="32">
+   <properties>
+    <property name="damage" value="1"/>
+    <property name="spike" value="spike"/>
+    <property name="width" value="96"/>
+   </properties>
+  </object>
+  <object id="28" name="platform" x="416" y="576" width="96" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="61" name="spike" x="832" y="544" width="128" height="32">
+   <properties>
+    <property name="damage" value="1"/>
+    <property name="spike" value="spike"/>
+    <property name="width" value="128"/>
+   </properties>
+  </object>
+  <object id="62" name="platform" x="832" y="576" width="128" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="64" name="platform" x="1600" y="416" width="128" height="64">
+   <properties>
+    <property name="blockers" value="trlb"/>
+   </properties>
+  </object>
+  <object id="65" name="platform" x="1664" y="352" width="64" height="64">
+   <properties>
+    <property name="blockers" value="trlb"/>
+   </properties>
+  </object>
+  <object id="66" name="platform" x="1728" y="288" width="288" height="192">
+   <properties>
+    <property name="blockers" value="trlb"/>
+   </properties>
+  </object>
+  <object id="67" name="platform" x="2176" y="288" width="224" height="64">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object id="68" name="platform" x="2560" y="288" width="128" height="64">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object id="69" name="platform" x="2848" y="288" width="128" height="64">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object id="70" name="platform" x="3072" y="288" width="128" height="352">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="72" name="platform" x="2016" y="576" width="1056" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="73" name="spike" x="2016" y="544" width="128" height="32">
+   <properties>
+    <property name="damage" value="20"/>
+    <property name="spike" value="spike"/>
+    <property name="width" value="128"/>
+   </properties>
+  </object>
+  <object id="74" name="spike" x="2144" y="544" width="128" height="32">
+   <properties>
+    <property name="damage" value="20"/>
+    <property name="spike" value="spike"/>
+    <property name="width" value="128"/>
+   </properties>
+  </object>
+  <object id="75" name="spike" x="2272" y="544" width="128" height="32">
+   <properties>
+    <property name="damage" value="20"/>
+    <property name="spike" value="spike"/>
+    <property name="width" value="128"/>
+   </properties>
+  </object>
+  <object id="76" name="spike" x="2400" y="544" width="128" height="32">
+   <properties>
+    <property name="damage" value="20"/>
+    <property name="spike" value="spike"/>
+    <property name="width" value="128"/>
+   </properties>
+  </object>
+  <object id="77" name="spike" x="2528" y="544" width="128" height="32">
+   <properties>
+    <property name="damage" value="20"/>
+    <property name="spike" value="spike"/>
+    <property name="width" value="128"/>
+   </properties>
+  </object>
+  <object id="78" name="spike" x="2656" y="544" width="128" height="32">
+   <properties>
+    <property name="damage" value="20"/>
+    <property name="spike" value="spike"/>
+    <property name="width" value="128"/>
+   </properties>
+  </object>
+  <object id="79" name="spike" x="2784" y="544" width="128" height="32">
+   <properties>
+    <property name="damage" value="20"/>
+    <property name="spike" value="spike"/>
+    <property name="width" value="128"/>
+   </properties>
+  </object>
+  <object id="80" name="spike" x="2912" y="544" width="160" height="32">
+   <properties>
+    <property name="damage" value="20"/>
+    <property name="spike" value="spike"/>
+    <property name="width" value="160"/>
+   </properties>
+  </object>
+  <object id="81" name="repeat" x="1696" y="256" width="32" height="32">
+   <properties>
+    <property name="repeat" value="yes"/>
+   </properties>
+  </object>
+  <object id="82" name="repeat" x="2016" y="256" width="32" height="32">
+   <properties>
+    <property name="repeat" value="yes"/>
+   </properties>
+  </object>
+  <object id="83" name="zombie" x="1920" y="192" width="32" height="32">
+   <properties>
+    <property name="can_shoot" value="true"/>
+    <property name="damage" value="10"/>
+    <property name="power" value="2"/>
+    <property name="range" value="1632 2016"/>
+    <property name="zombie" value="shoot"/>
+   </properties>
+  </object>
+  <object id="86" name="platform" x="3168" y="64" width="42" height="224">
+   <properties>
+    <property name="blockers" value="end"/>
+   </properties>
+  </object>
+  <object id="90" name="platform" x="3168" y="64" width="42" height="224">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
